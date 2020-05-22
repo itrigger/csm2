@@ -1,0 +1,95 @@
+#site-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity .4s ease-in-out 0s,-webkit-transform .4s ease-in-out 0s;
+  transition: transform .4s ease-in-out 0s,opacity .4s ease-in-out 0s;
+  transition: transform .4s ease-in-out 0s,opacity .4s ease-in-out 0s,-webkit-transform .4s ease-in-out 0s;
+  -webkit-transform: translateY(36px) translateZ(0);
+  transform: translateY(36px) translateZ(0);
+  will-change: transform,opacity;
+  .in{
+    transition: padding .4s ease-in-out 0s,max-width .4s ease-in-out 0s;
+    transition: all .4s ease-in-out 0s;
+    will-change: transform,padding,max-width;
+  }
+  .wrapper{
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 40px;
+    transition: border-radius .4s ease-in-out 0s;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+  }
+  .pull-right{
+    margin-left: auto;
+  }
+}
+
+.logo {
+  display: flex;
+  a{
+    background: url(../images/logofull.svg) 0 0 no-repeat;
+    background-size: contain;
+    display: block;
+    width: 243px;
+    height: 46px;
+    text-decoration: none;
+  }
+}
+
+.top-tel{
+  position: relative;
+  top: 3px;
+}
+
+.site-header_menu{
+  margin-top: 8px;
+  margin-left: 112px;
+}
+.ul_menu{
+  margin: 0;
+  padding: 0;
+}
+
+.ul_menu_item{
+  font-size: 18px;
+  font-family: $rubik-medium;
+  list-style: none;
+  display: inline-block;
+  margin-right: 50px;
+  &:last-child{
+    margin-right: 0;
+  }
+  a{
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(#000000, 0.4);
+    &:hover{
+      color: $pink;
+      border-bottom: 1px solid rgba($pink, 0.4);
+    }
+  }
+}
+#site-header.-top{
+  transition: -webkit-transform .4s ease-in-out 0s;
+  transition: transform .4s ease-in-out 0s;
+  transition: transform .4s ease-in-out 0s,-webkit-transform .4s ease-in-out 0s;
+  -webkit-transform: translateY(0) translateZ(0);
+  transform: translateY(0) translateZ(0);
+  will-change: transform;
+  .in{
+    transition: padding .4s ease-in-out 0s,max-width .4s ease-in-out 0s;
+    padding: 0;
+    max-width: 100%;
+    will-change: transform,padding,max-width;
+  }
+  .wrapper{
+    border-radius: 0;
+    transition: border-radius .4s ease-in-out 0s;
+  }
+}
