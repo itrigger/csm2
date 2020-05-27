@@ -14,20 +14,37 @@
 ?>
 </div>
 <footer id="site-footer" role="contentinfo" class="header-footer-group">
+  <div class="home-page_howto-footer"></div>
   <div class="line2">
     <div class="in">
       <div class="flex">
         <div class="botlogowrapper">
           <div class="botlogo"></div>
-          <div class="copy">Центр содействия миграции. © 2010 — <?php echo date('Y'); ?></div>
+          <div class="copy">© 2010 — <?php echo date('Y'); ?></div>
+        </div>
+        <div class="foot_menu_wrap">
+            <div class="foot_menu">
+              <ul class="ul_menu">
+                <li class="ul_menu_item"><a href="/grajdanstvo">Гражданство РФ</a></li>
+                <li class="ul_menu_item"><a href="/rvp">РВП</a></li>
+                <li class="ul_menu_item"><a href="/vnj">ВНЖ</a></li>
+                <li class="ul_menu_item"><a href="/blog">Блог</a></li>
+              </ul>
+            </div>
+          <div class="foot_contact">
+            <div class="ico-map">105064, г. Москва, пр-т Свердлова, д. 61</div>
+            <div class="ico-mail"><a href="mailto:info@csmig.ru">info@csmig.ru</a></div>
+            <div class="ico-tel"><a href="tel:88007589889">8 800 758 98 89</a></div>
+          </div>
         </div>
         <div class="developer"><a href="http://masshtab.kz" target="_blank"></a></div>
       </div>
+      <div class="switch_wrap"><a href="/?switch_theme=mobile">Переключиться на мобильную версию</a></div>
     </div>
   </div>
 
 </footer><!-- #site-footer -->
-<div style="text-align:center;padding:10px 0;"><a href="/?switch_theme=mobile">Переключиться на мобильную версию</a></div>
+
 <?php wp_footer(); ?>
 
 <script src="/wp-content/themes/csm/assets/js/vendor/modernizr-3.7.1.min.js"></script>

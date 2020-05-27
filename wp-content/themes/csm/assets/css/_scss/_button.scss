@@ -6,9 +6,9 @@
   border-radius: 30px;
   display: inline-block;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
   line-height: 16px;
-  font-family: $rubik-medium;
   transition: 0.2s all;
   &:hover {
     background: $blue;
@@ -17,15 +17,45 @@
   }
 
   &.btn-blue {
-    background: $blue;
+    padding: 17px 35px;
+    border: none;
+    background: rgb(30,49,126);
+    background: -moz-linear-gradient(0deg, rgba(30,49,126,1) 0%, rgba(30,182,233,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(30,49,126,1) 0%, rgba(30,182,233,1) 100%);
+    background: linear-gradient(0deg, rgba(30,49,126,1) 0%, rgba(30,182,233,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e317e",endColorstr="#1eb6e9",GradientType=1);
     color: #fff;
+    transition: 0.2s all;
     &:hover {
-      background: $blue-hover;
+      background: #1e317e;
+      background: -moz-linear-gradient(0deg, rgba(#1e317e,1) 0%, rgba(#1e317e,1) 100%);
+      background: -webkit-linear-gradient(0deg, rgba(#1e317e,1) 0%, rgba(#1e317e,1) 100%);
+      background: linear-gradient(0deg, rgba(#1e317e,1) 0%, rgba(#1e317e,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e317e",endColorstr="#1e317e",GradientType=1);
       color: #fff;
       transition: 0.2s all;
     }
   }
-
+  &.btn-pink {
+    padding: 17px 35px;
+    border: none;
+    background: #a02c58;
+    background: -moz-linear-gradient(0deg, rgba(#a02c58,1) 0%, rgba(#dc325a,1) 90%);
+    background: -webkit-linear-gradient(0deg, rgba(#a02c58,1) 0%, rgba(#dc325a,1) 90%);
+    background: linear-gradient(0deg, rgba(#a02c58,1) 0%, rgba(#dc325a,1) 90%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a02c58",endColorstr="#dc325a",GradientType=1);
+    color: #fff;
+    transition: 0.2s all;
+    &:hover {
+      background: #a02c58;
+      background: -moz-linear-gradient(0deg, rgba(#a02c58,1) 0%, rgba(#a02c58,1) 100%);
+      background: -webkit-linear-gradient(0deg, rgba(#a02c58,1) 0%, rgba(#a02c58,1) 100%);
+      background: linear-gradient(0deg, rgba(#a02c58,1) 0%, rgba(#a02c58,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a02c58",endColorstr="#a02c58",GradientType=1);
+      color: #fff;
+      transition: 0.2s all;
+    }
+  }
   &.large {
     font-size: 17px;
     padding: 15px 33px;

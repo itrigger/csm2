@@ -1,0 +1,85 @@
+#site-footer{
+  position: relative;
+  background: #231f20;
+  margin-top: -60px;
+  padding-top: 340px;
+  color: #fff;
+  a{
+    color: #fff;
+  }
+  &:before{
+    @extend .pseudo;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: url(../images/blackbubblebig-32.png) 0 0 repeat;
+    opacity: 0.05;
+  }
+  .home-page_howto-footer{
+    position: absolute;
+    top: 0;
+    z-index: 0;
+  }
+}
+.switch_wrap{
+  text-align: center;
+}
+
+#site-footer {
+  .botlogowrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  .botlogo{
+    width: 130px;
+    height: 81px;
+    background: url(../images/botlogofull.svg) 0 0 no-repeat;
+    background-size: cover;
+  }
+  .line2 {
+    min-height: 60px;
+    font-size: 13px;
+    padding-bottom: 25px;
+    .flex {
+      justify-content: space-between;
+      padding-top: 7px;
+    }
+    .copy{
+      padding: 13px 0 0 0;
+      font-size: 15px;
+      color: #85878A;
+    }
+    .developer{
+      margin-left: auto;
+    }
+    .foot_menu_wrap{
+      padding-left: 120px;
+      padding-top: 20px;
+     .foot_menu a{
+        border-bottom: 1px solid rgba(#fff,0.4);
+        &:hover{
+          border-bottom: 1px solid rgba(#fff,0.8);
+        }
+      }
+    }
+    .developer a {
+      color: #b3b3b3;
+      display: block;
+      padding-right: 156px;
+      width: 136px;
+      height: 32px;
+      border: none;
+      position: relative;
+      &:before {
+        @extend .pseudo;
+        width: 136px;
+        height: 32px;
+        background: url(../images/maslogo.svg) 0 0 no-repeat;
+        background-size: 136px 32px;
+        left: 0;
+        top: 3px;
+      }
+    }
+  }
+
+
+
+}

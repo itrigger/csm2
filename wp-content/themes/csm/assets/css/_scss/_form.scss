@@ -1,0 +1,46 @@
+input[type=text],input[type=tel],input[type=email]{
+  background: #fff;
+  border-radius: 27px;
+  padding: 17px 25px;
+  width: 100%;
+  border: none;
+  margin-bottom: 13px;
+  font-size: 14px;
+  &:focus,&:hover{
+    outline: none;
+  }
+}
+input[type=submit]{
+  @extend .btn.btn-pink;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.lineform{
+  display: flex;
+  flex-direction: row;
+  input[type=text], input[type=tel], input[type=email]{
+    width: auto;
+  }
+}
+
+.consul_form{
+  form{
+    display: flex;
+  }
+  input[type=text],
+  input[type=tel],
+  input[type=email]{
+    border-radius: 0;
+    margin-bottom: 0;
+    width: 277px;
+  }
+
+  input.startinput{
+    border-radius: 25px 0 0 25px;
+  }
+  input[type=submit]{
+    border-radius: 0 25px 25px 0;
+
+  }
+}
