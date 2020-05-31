@@ -13,3 +13,68 @@
   .rtl{
     flex-direction: row-reverse;
   }
+
+.flex4{
+  justify-content: center;
+  &>div{
+    width: 23%;
+    border: 2px solid #b0daf5;
+    padding: 35px;
+    margin: 0 1%;
+    border-radius: 12px;
+  }
+}
+.flex3{
+  justify-content: space-around;
+  &>div{
+    width: 25%;
+    border: 2px solid #b0daf5;
+    padding: 35px;
+    margin: 0 2%;
+    border-radius: 12px;
+  }
+}
+
+.breadcrumbs{
+  border: 2px solid rgba($blue,0.5);
+  border-radius: 20px;
+  padding: 2px 20px 6px;
+  display: inline-block;
+  ul{
+    margin: 0;
+    padding: 0;
+    li{
+      list-style: none;
+      display: inline-block;
+      font-size: 14px;
+      line-height: 14px;
+      position: relative;
+      padding-right: 26px;
+      color: #58595b;
+      &:after{
+        @extend .pseudo;
+        background: url('../images/bc_arr.svg') 0 0 no-repeat;
+        background-size: cover;
+        width: 6px;
+        height: 9px;
+        right: 6px;
+        top: 3px;
+      }
+      a{
+        font-size: 14px;
+        line-height: 14px;
+        color: $blue;
+        border-bottom-color: rgba($blue,0.4);
+      }
+      &:last-child{
+        padding-right: 0;
+        &:after{
+          display: none;
+        }
+      }
+    }
+  }
+  &+header{
+    margin-top: 25px;
+  }
+}

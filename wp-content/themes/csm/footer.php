@@ -39,10 +39,9 @@
         </div>
         <div class="developer"><a href="http://masshtab.kz" target="_blank"></a></div>
       </div>
-      <div class="switch_wrap"><a href="/?switch_theme=mobile">Переключиться на мобильную версию</a></div>
     </div>
   </div>
-
+  <div class="switch_wrap"><a href="/?switch_theme=mobile">Переключиться на мобильную версию</a></div>
 </footer><!-- #site-footer -->
 
 <?php wp_footer(); ?>

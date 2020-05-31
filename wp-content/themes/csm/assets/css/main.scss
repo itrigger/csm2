@@ -320,6 +320,7 @@ textarea {
 a:focus, a:active, input[type=submit]{
   outline: none;
 }
+
 .contact-block .b3 .ico-tel{
   line-height: 20px;
 }
@@ -330,6 +331,8 @@ $rubik: 'Rubik', sans-serif;
 $rubik-light: 'Rubik-Light', sans-serif;
 $rubik-medium: 'Rubik-Medium', sans-serif;
 $rubik-bold: 'Rubik-Bold', sans-serif;
+
+
 
 .pseudo {
   content: '';
@@ -364,13 +367,6 @@ body {
   font-size: 1em;
 }
 
-.pull-left {
-
-}
-
-.pull-right {
-
-}
 
 .in {
   max-width: 1600px;
@@ -386,9 +382,13 @@ body {
 }
 
 a {
-  color: $blue;
+  color: $pink;
   font-family: inherit;
-
+  text-decoration: none;
+  border-bottom: 1px solid rgba($pink,0.4);
+  &:hover{
+    border-bottom: 1px solid rgba($pink,0.2);
+  }
 }
 
 
@@ -525,6 +525,7 @@ input[type=submit] {
   text-decoration: none;
   margin: 7px 25px 0 0;
   padding-left: 20px;
+  border-bottom: none;
   &:before {
     @extend .pseudo;
     width: 14px;
@@ -554,13 +555,7 @@ h2{
   justify-content: center;
 }
 
-.flex3 {
-  width: 33%;
-  max-width: 33%;
-  flex: 0 0 33%;
-  flex-direction: column;
-  position: relative;
-}
+
 
 .flex {
   display: flex;
@@ -803,5 +798,6 @@ span.wpcf7-not-valid-tip {
 @import "_scss/_support.scss";
 @import "_scss/_header.scss";
 @import "_scss/_homepage.scss";
+@import "_scss/_uniqpage.scss";
 @import "_scss/_footer.scss";
 

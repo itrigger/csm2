@@ -22,6 +22,9 @@ input[type=submit]{
   input[type=text], input[type=tel], input[type=email]{
     width: auto;
   }
+  input[type=tel]{
+    border-left: 1px solid #ccc;
+  }
 }
 
 .consul_form{

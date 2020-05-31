@@ -12,15 +12,74 @@
     top: 0; left: 0; bottom: 0; right: 0;
     background: url(../images/blackbubblebig-32.png) 0 0 repeat;
     opacity: 0.05;
+    background-size: 10%;
   }
   .home-page_howto-footer{
     position: absolute;
     top: 0;
     z-index: 0;
   }
+  .foot_contact{
+    display: flex;
+    flex-direction: row;
+    margin-top: 43px;
+    font-size: 15px;
+    .ico-tel{
+      font-size: 15px;
+      font-weight: bold;
+      margin: 0 0 0 15%;
+      a{
+        text-decoration: none;
+        border-bottom: none;
+      }
+      &:before{
+        top: 4px;
+      }
+    }
+    .ico-mail{
+      margin-left: 15%;
+      position: relative;
+      padding-left: 27px;
+      a{
+        text-decoration: none;
+        border-bottom: none;
+      }
+      &:before{
+        @extend .pseudo;
+        background: url('../images/ico-mail.svg') 0 0 no-repeat;
+        background-size: contain;
+        width: 17px;
+        height: 13px;
+        position: absolute;
+        left: 0;
+        top: 5px;
+      }
+    }
+    .ico-map{
+      position: relative;
+      padding-left: 25px;
+      &:before{
+        @extend .pseudo;
+        background: url('../images/ico-map.svg') 0 0 no-repeat;
+        background-size: contain;
+        width: 11px;
+        height: 17px;
+        position: absolute;
+        left: 0;
+        top: 2px;
+      }
+    }
+  }
 }
 .switch_wrap{
   text-align: center;
+  padding: 10px;
+  font-size: 13px;
+  background: #000;
+  position: relative;
+  a{
+    border-bottom: none;
+  }
 }
 
 #site-footer {
@@ -43,7 +102,7 @@
       padding-top: 7px;
     }
     .copy{
-      padding: 13px 0 0 0;
+      padding: 6px 0 0 0;
       font-size: 15px;
       color: #85878A;
     }
@@ -53,7 +112,9 @@
     .foot_menu_wrap{
       padding-left: 120px;
       padding-top: 20px;
+      flex-grow: 2;
      .foot_menu a{
+       font-size: 16px;
         border-bottom: 1px solid rgba(#fff,0.4);
         &:hover{
           border-bottom: 1px solid rgba(#fff,0.8);
@@ -79,7 +140,4 @@
       }
     }
   }
-
-
-
 }
