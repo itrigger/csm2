@@ -1,0 +1,13 @@
+@supports ((padding-left: env(safe-area-inset-left)) and (padding: max(0px))) {
+  .in, .homepage-slider, .site-header_menu, #site-header .wrapper {
+    --safe-area-inset-left: env(safe-area-inset-left);
+    padding-left: max(20px, var(--safe-area-inset-left));
+  }
+}
+
+@supports ((padding-right: env(safe-area-inset-right)) and (padding: max(0px))) {
+  .in, .site-header_menu, #site-header .wrapper {
+    --safe-area-inset-right: env(safe-area-inset-right);
+    padding-right: max(20px, var(--safe-area-inset-right));
+  }
+}

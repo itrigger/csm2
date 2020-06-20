@@ -10,25 +10,29 @@
 get_header();
 ?>
 
-<main id="site-content" role="main">
+  <div class="wrapper page-blog">
+    <div class="content">
+      <div class="in">
 
-	<div class="section-inner thin error404-content">
+        <h1 class="entry-title"><?php _e( 'Page Not Found', 'twentytwenty' ); ?></h1>
 
-		<h1 class="entry-title"><?php _e( 'Page Not Found', 'twentytwenty' ); ?></h1>
+        <div class="intro-text"><p><?php _e( 'The page you were looking for could not be found. It might have been removed, renamed, or did not exist in the first place.', 'twentytwenty' ); ?></p></div>
+        <br/><br/>
+        <a href="/" class="btn btn-blue">Перейти на главную</a>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+      </div><!-- .section-inner -->
+    </div><!-- .section-inner -->
+  </div><!-- .section-inner -->
 
-		<div class="intro-text"><p><?php _e( 'The page you were looking for could not be found. It might have been removed, renamed, or did not exist in the first place.', 'twentytwenty' ); ?></p></div>
-
-		<?php
-		get_search_form(
-			array(
-				'label' => __( '404 not found', 'twentytwenty' ),
-			)
-		);
-		?>
-
-	</div><!-- .section-inner -->
-
-</main><!-- #site-content -->
+  <style>
+    .home-page_bot__contact-block{
+      margin-top: 5px;
+    }
+  </style>
 
 <?php get_template_part( 'template-parts/footer-menus-widgets' ); ?>
 

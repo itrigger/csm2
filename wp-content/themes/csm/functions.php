@@ -239,9 +239,9 @@ add_action( 'wp_print_footer_scripts', 'twentytwenty_skip_link_focus_fix' );
 function twentytwenty_non_latin_languages() {
 	$custom_css = TwentyTwenty_Non_Latin_Languages::get_non_latin_css( 'front-end' );
 
-	if ( $custom_css ) {
+	/*if ( $custom_css ) {
 		wp_add_inline_style( 'twentytwenty-style', $custom_css );
-	}
+	}*/
 }
 
 add_action( 'wp_enqueue_scripts', 'twentytwenty_non_latin_languages' );
@@ -662,6 +662,8 @@ function twentytwenty_get_color_for_area( $area = 'content', $context = 'text' )
 	// Return false if the option doesn't exist.
 	return false;
 }
+
+add_theme_support( 'post-thumbnails' );
 
 /**
  * Returns an array of variables for the customizer preview.

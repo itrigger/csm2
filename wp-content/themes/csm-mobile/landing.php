@@ -12,54 +12,68 @@ get_header(); ?>
 
   <div class="in">
     <div class="landbg">
-
+      <div class="header-text-block">
+        <h1>
+          Центр содействия миграции</h1>
+      </div>
       <div class="services-block">
         <div class="flex-w">
           <div class="flex3 ico1">
             <div class="li-content">
-              <div class="text">Заполнение анкет на&nbsp;РВП и&nbsp;ВНЖ</div>
-
+              <div class="img"></div>
+              <div class="text">Заполнение анкет<br>на&nbsp;РВП и&nbsp;ВНЖ</div>
+              <div class="showonhover"><a data-fancybox data-src="#help" href="javascript:;" data-subject="Оформление Анкет на ВНЖ" class="btn btn-blue large"><span>Получить консультацию</span></a></div>
             </div>
           </div>
           <div class="flex3 ico2">
             <div class="li-content">
-              <div class="text">Помощь в&nbsp;получении РВП и&nbsp;ВНЖ</div>
-
+              <div class="img"></div>
+              <div class="text">Помощь в&nbsp;получении<br>РВП и&nbsp;ВНЖ</div>
+              <div class="showonhover"><a data-fancybox data-src="#help" href="javascript:;" data-subject="Помощь в получении РВП" class="btn btn-blue large"><span>Получить консультацию</span></a></div>
             </div>
           </div>
           <div class="flex3 ico3">
             <div class="li-content">
-                <div class="text">Оформление гражданства РФ</div>
+              <div class="img"></div>
+              <div class="text">Оформление<br>гражданства РФ</div>
+              <div class="showonhover"><a data-fancybox data-src="#help" href="javascript:;" data-subject="Оформление гражданства" class="btn btn-blue large"><span>Получить консультацию</span></a></div>
             </div>
           </div>
-          <div class="showonhover"><a data-fancybox data-src="#help" href="javascript:;" data-subject="Запрос с мобильной версии" class="btn btn-blue large"><span>Получить консультацию</span></a></div>
         </div>
       </div>
     </div>
   </div>
 
   <section class="section2">
-
-
-        <div class="">
+    <div class="in">
+      <div class="flex">
+        <div class="flex1-2">
+          <div class="pic">
+            <div class="men"></div>
+            <div class="text">
+              <div class="header">Виктор Фишер</div>
+              <p>Директор центра содействия миграции</p>
+              <ul class="social-links">
+                <li><a href="https://api.whatsapp.com/send?phone=79257753467" target="_blank" class="ico-wh"></a></li>
+                <li><a href="viber://chat?number=79257753467" target="_blank" class="ico-vb"></a></li>
+                <!--<li><a href="https://t.me/CSMIG" target="_blank" class="ico-tg"></a></li>-->
+              </ul>
+            </div>
+          </div>
           <div class="pic-mobile">
-            <div class="men">
-              <div class="text">
-                <div class="header">Виктор Фишер</div>
-                <p>Директор центра содействия миграции</p>
-                <ul class="social-links">
-                  <li><a href="https://api.whatsapp.com/send?phone=79257753467" target="_blank" class="ico-wh"></a></li>
-                  <li><a href="viber://chat?number=79257753467" target="_blank" class="ico-vb"></a></li>
-                <!--  <li><a href="https://t.me/CSMIG" target="_blank" class="ico-tg"></a></li>-->
-                </ul>
-              </div>
-              <img src="/wp-content/themes/csm/assets/images/man.png" />
-
+            <div class="men"><img src="/wp-content/themes/csm/assets/images/man.png" /></div>
+            <div class="text">
+              <div class="header">Виктор Фишер</div>
+              <p>Директор центра содействия миграции</p>
+              <ul class="social-links">
+                <li><a href="https://api.whatsapp.com/send?phone=79257753467" target="_blank" class="ico-wh"></a></li>
+                <li><a href="viber://chat?number=79257753467" target="_blank" class="ico-vb"></a></li>
+                <!--<li><a href="https://t.me/CSMIG" target="_blank" class="ico-tg"></a></li>-->
+              </ul>
             </div>
           </div>
         </div>
-    <div class="in">
-        <div class="section2_right">
+        <div class="flex1-2 section2_right">
           <div class="header">Помогаем всем быстро и&nbsp;с&nbsp;результатом!</div>
           <p>Если у вас остались вопросы по получению РВП, ВНЖ и Гражданства РФ, вы можете задать их онлайн-консультанту
             или записаться на прием.</p>
@@ -67,7 +81,7 @@ get_header(); ?>
             <?php echo do_shortcode('[contact-form-7 id="5" title="Видимая форма"]'); ?>
           </div>
         </div>
-
+      </div>
     </div>
   </section>
 

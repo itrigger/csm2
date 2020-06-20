@@ -159,10 +159,10 @@
 			stylesheet = $( '#' + stylesheedID ),
 			styles = '';
 		// If the stylesheet doesn't exist, create it and append it to <head>.
-		if ( ! stylesheet.length ) {
+		/*if ( ! stylesheet.length ) {
 			$( '#twentytwenty-style-inline-css' ).after( '<style id="' + stylesheedID + '"></style>' );
 			stylesheet = $( '#' + stylesheedID );
-		}
+		}*/
 		if ( ! _.isUndefined( a11yColors[ context ] ) ) {
 			// Check if we have elements defined.
 			if ( twentyTwentyPreviewEls[ context ] ) {

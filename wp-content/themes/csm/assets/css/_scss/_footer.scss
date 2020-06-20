@@ -2,7 +2,7 @@
   position: relative;
   background: #231f20;
   margin-top: -60px;
-  padding-top: 340px;
+  padding-top: 440px;
   color: #fff;
   a{
     color: #fff;
@@ -16,8 +16,10 @@
   }
   .home-page_howto-footer{
     position: absolute;
-    top: 0;
+    top: 166px;
     z-index: 0;
+    background: url("/wp-content/themes/csm/assets/images/homepage-bg-footer-21.png") center bottom no-repeat;
+   background-color: transparent;
   }
   .foot_contact{
     display: flex;

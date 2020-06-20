@@ -1,0 +1,85 @@
+@media (min-width: 1440px) and (max-width: 1530px){
+  .logo a{
+    background-size: cover;
+    width: 121px;
+    height: 37px;
+  }
+}
+
+/*media 1440-1600+++++*/
+@media (min-width: 1440px) and (max-width: 1600px){
+
+  .site-header_menu{
+    margin-left: 50px;
+  }
+  .ul_menu_item{
+    margin-right: 45px;
+  }
+  .color-bg header{
+    font-size: 50px;
+  }
+  .color-bg .desc{
+    font-size: 22px;
+  }
+  .homepage-slider .color-bg img{
+    max-width: 530px;
+  }
+  .chessmate img{
+    max-width: 90%;
+  }
+  .sotrud_triple_block{
+    padding-bottom: 30px;
+  }
+  .sotrud_triple_block .head{
+    padding: 0 40px;
+  }
+  .sotrud_triple_block .desc{
+    padding: 0 40px;
+  }
+  .steps .step{
+    width: 23%;
+  }
+  .megaoval{
+    width: 1314px;
+    margin: 0 auto;
+  }
+  .consul_form{
+    width: 888px;
+    padding: 45px 53px 30px;
+  }
+  .consul_form_bottom{
+    width: 888px;
+  }
+  .consul_form .head{
+    font-size: 26px;
+  }
+  .consul_form input[type=text], .consul_form input[type=tel], .consul_form input[type=email]{
+    width: 321px;
+  }
+  .all7:after{
+    right: 1%;
+    top: 79px;
+  }
+  .all6:after{
+    right: 70px;
+    top: 72px;
+  }
+  .color-bg.hb-inner header{
+    font-size: 50px;
+  }
+  .color-bg header{
+    width: 70%;
+  }
+  .blocks .img img{
+    width: 100%;
+  }
+  .page-template-inner2,
+  .page-template-inner3-1,
+  .page-template-inner3-6
+  {
+    .color-bg header{
+      width: 65%;
+    }
+  }
+}
+/*media 1440-1600-----*/

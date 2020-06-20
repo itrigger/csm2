@@ -7,8 +7,18 @@
 .owl-carousel .owl-item img {
   width: auto;
 }
+.owl-homepage-slider{
 
+}
+.homepage-slider{
+  a{
+    display: block;
+    height:100%;
+    border: none;
+  }
+}
 .color-bg {
+
   .in {
     height: 100%;
   }
@@ -22,23 +32,32 @@
     width: 65%;
     line-height: 1;
     margin-bottom: 25px;
+    position: relative;
+    z-index: 1;
     span{
       font-family: inherit;
       display: block;
     }
+    a{
+      border-bottom: none;
+      color: inherit;
+    }
   }
   .desc {
     font-size: 25px;
-    width: 55%;
+    width: 60%;
     color: #fff;
     margin-bottom: 25px;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
   }
 
 }
 .homepage-slider .color-bg{
   img {
     position: absolute;
-    right: 152px;
+    right: 102px;
     bottom: -50px;
   }
 }
@@ -129,6 +148,7 @@
     .header{
       font-size: 24px;
       font-family: $rubik;
+      color: #fff;
     }
     .desc{
       font-size: 16px;
@@ -221,8 +241,11 @@
   padding-top: 170px;
   position: relative;
   top: -220px;
-  margin-bottom: -220px;
+  margin-bottom: -170px;
   background: url('../images/hpbg.jpg') repeat;
+  .in{
+    z-index: 1;
+  }
 }
 
 .home-page_howto .divide-2-1_right{
@@ -235,12 +258,19 @@
   position: relative;
   top: -50px;
   z-index: -1;
-  background: url("/wp-content/themes/csm/assets/images/homepage-bg-footer-21.svg") center bottom no-repeat;
+  background: url("/wp-content/themes/csm/assets/images/homepage-bg-footer-21-21.png") center bottom no-repeat #fff;
   background-size: cover;
   width: 100%;
-  height: 167px;
+  height: 285px;
+   z-index: 0;
+   margin-top: -190px;
+   top: 0;
 }
+body.home{
+  .home-page_howto-footer{
 
+  }
+}
 
 .counts{
   padding-top: 20px;
@@ -256,6 +286,7 @@
     max-width: 330px;
     position: absolute;
     top: 11px;
+    color: $black;
   }
   .number{
     font-family: $rubik-light;
@@ -301,7 +332,7 @@
   }
 }
 
-.oval{
+.oval2{
   background: url('../images/whitecurved.svg') center 0 no-repeat;
   height: 110px;
   width: 100%;
@@ -376,6 +407,8 @@
   .desc{
     font-size: 17px;
     padding: 0 60px;
+    letter-spacing: 0.5px;
+    color: #414042;
   }
 }
 
@@ -478,12 +511,12 @@
 
 .home-page_bot__contact-block{
   margin-top: 100px;
-  margin-bottom: -300px;
+  margin-bottom: -400px;
   .consul-block__head{
     background: none;
     width: 600px;
-    margin: 0 auto -29px;
-    padding: 105px 0 20px 290px;
+    margin: 0 auto -27px;
+    padding: 85px 0 0 290px;
     position: relative;
     top: -49px;
   }
@@ -502,6 +535,28 @@
   }
   .consul-block__desc{
     font-size: 17px;
+  }
+  .consul-block__social-btns{
+    margin-top: 12px;
+  }
+  .social-links li .ico-vb{
+    background: url(../images/viber-white.svg) 0 0 no-repeat;
+    background-size: contain;
+  }
+  .social-links li .ico-wh{
+    background: url("../images/whatsapp-glyph-white.svg") 0 0 no-repeat;
+    background-size: contain;
+  }
+}
+.consul-block__social-btns{
+  margin-top: 10px;
+  .social-links li .ico-vb{
+    background: url(../images/viber-white.svg) 0 0 no-repeat;
+    background-size: contain;
+  }
+  .social-links li .ico-wh{
+    background: url("../images/whatsapp-glyph-white.svg") 0 0 no-repeat;
+    background-size: contain;
   }
 }
 
@@ -532,4 +587,28 @@
   background: linear-gradient(1deg, rgba(35,65,130,1) 0%, rgba(53,89,163,1) 60%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#234182",endColorstr="#3559a3",GradientType=1);}
 
+body.page-template{
+  .home-page_bot__contact-block{
+    margin-top: 160px;
+  }
+}
 
+body.page-template-category-2{
+  .home-page_bot__contact-block{
+    margin-top: 0;
+  }
+}
+
+body.home{
+  .pages-page_steps{
+    padding-top: 10px;
+  }
+  .home-page_bot__contact-block{
+    margin-top: 60px;
+  }
+}
+
+
+.slide3{
+
+}

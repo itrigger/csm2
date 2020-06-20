@@ -287,33 +287,33 @@ textarea {
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
 @font-face {
-  font-family: Rubik-Light;
-  src: url(../../../../uploads/fonts/Rubik-Light.eot);
-  src: url(../../../../uploads/fonts/Rubik-Light.eot?#iefix) format("embedded-opentype"), url(../../../../uploads/fonts/Rubik-Light.woff) format("woff"), url(../../../../uploads/fonts/Rubik-Light.ttf) format("truetype"), url(../../../../uploads/fonts/Rubik-Light.svg#Rubik-Light) format("svg");
+  font-family: Inter-Light;
+  src: url(../../../../uploads/fonts/Inter-Light.eot);
+  src: url(../../../../uploads/fonts/Inter-Light.eot?#iefix) format("embedded-opentype"), url(../../../../uploads/fonts/Inter-Light.woff) format("woff"), url(../../../../uploads/fonts/Inter-Light.ttf) format("truetype"), url(../../../../uploads/fonts/Inter-Light.svg#Inter-Light) format("svg");
   font-weight: 300;
   font-style: normal
 }
 
 @font-face {
-  font-family: Rubik-Medium;
-  src: url(../../../../uploads/fonts/Rubik-Medium.eot);
-  src: url(../../../../uploads/fonts/Rubik-Medium.eot?#iefix) format("embedded-opentype"), url(../../../../uploads/fonts/Rubik-Medium.woff) format("woff"), url(../../../../uploads/fonts/Rubik-Medium.ttf) format("truetype"), url(../../../../uploads/fonts/Rubik-Medium.svg#Rubik-Medium) format("svg");
+  font-family: Inter-SemiBold;
+  src: url(../../../../uploads/fonts/Inter-SemiBold.eot);
+  src: url(../../../../uploads/fonts/Inter-SemiBold.eot?#iefix) format("embedded-opentype"), url(../../../../uploads/fonts/Inter-SemiBold.woff) format("woff"), url(../../../../uploads/fonts/Inter-SemiBold.ttf) format("truetype"), url(../../../../uploads/fonts/Inter-SemiBold.svg#Inter-SemiBold) format("svg");
   font-weight: 500;
   font-style: normal
 }
 
 @font-face {
-  font-family: Rubik-Bold;
-  src: url(../../../../uploads/fonts/Rubik-Bold.eot);
-  src: url(../../../../uploads/fonts/Rubik-Bold.eot?#iefix) format("embedded-opentype"), url(../../../../uploads/fonts/Rubik-Bold.woff) format("woff"), url(../../../../uploads/fonts/Rubik-Bold.ttf) format("truetype"), url(../../../../uploads/fonts/Rubik-Bold.svg#Rubik-Bold) format("svg");
+  font-family: Inter-Black;
+  src: url(../../../../uploads/fonts/Inter-Black.eot);
+  src: url(../../../../uploads/fonts/Inter-Black.eot?#iefix) format("embedded-opentype"), url(../../../../uploads/fonts/Inter-Black.woff) format("woff"), url(../../../../uploads/fonts/Inter-Black.ttf) format("truetype"), url(../../../../uploads/fonts/Inter-Black.svg#Inter-Black) format("svg");
   font-weight: 700;
   font-style: normal
 }
 
 @font-face {
   font-family: Rubik;
-  src: url(../../../../uploads/fonts/Rubik-Regular.eot);
-  src: url(../../../../uploads/fonts/Rubik-Regular.eot?#iefix) format("embedded-opentype"), url(../../../../uploads/fonts/Rubik-Regular.woff) format("woff"), url(../../../../uploads/fonts/Rubik-Regular.ttf) format("truetype"), url(../../../../uploads/fonts/Rubik-Regular.svg#Rubik-Regular) format("svg");
+  src: url(../../../../uploads/fonts/Inter-Regular.eot);
+  src: url(../../../../uploads/fonts/Inter-Regular.eot?#iefix) format("embedded-opentype"), url(../../../../uploads/fonts/Inter-Regular.woff) format("woff"), url(../../../../uploads/fonts/Inter-Regular.ttf) format("truetype"), url(../../../../uploads/fonts/Inter-Regular.svg#Inter-Regular) format("svg");
   font-weight: 400;
   font-style: normal
 }
@@ -328,10 +328,10 @@ $blue: #16A2E5;
 $blue-hover: #16adf2;
 $pink: #dc325a;
 $rubik: 'Rubik', sans-serif;
-$rubik-light: 'Rubik-Light', sans-serif;
-$rubik-medium: 'Rubik-Medium', sans-serif;
-$rubik-bold: 'Rubik-Bold', sans-serif;
-
+$rubik-light: 'Inter-Light', sans-serif;
+$rubik-medium: 'Inter-SemiBold', sans-serif;
+$rubik-bold: 'Inter-Black', sans-serif;
+$black: #231f20;
 
 
 .pseudo {
@@ -358,7 +358,11 @@ $rubik-bold: 'Rubik-Bold', sans-serif;
 
 body {
  // background: url('../images/temp.jpg') center top no-repeat;
+  color: #414042;
+}
 
+h1,h2,h3,h4,h5,h6,.head,.header{
+  color: $black;
 }
 
 * {
@@ -429,22 +433,22 @@ body {
     .ico-wh {
       background: url('../images/whatsapp-glyph-green.svg') 0 0 no-repeat;
       background-size: contain;
-      width: 30px;
-      height: 30px;
+      width: 25px;
+      height: 25px;
     }
 
     .ico-vb {
       background: url('../images/viber.svg') 0 0 no-repeat;
       background-size: contain;
-      width: 30px;
-      height: 30px;
+      width: 25px;
+      height: 25px;
     }
 
     .ico-tg {
       background: url('../images/telegram.svg') 0 0 no-repeat;
       background-size: contain;
-      width: 30px;
-      height: 30px;
+      width: 25px;
+      height: 25px;
     }
   }
 }
@@ -523,7 +527,7 @@ input[type=submit] {
   color: #000;
   font-size: 20px;
   text-decoration: none;
-  margin: 7px 25px 0 0;
+  margin: 0 25px 0 5px;
   padding-left: 20px;
   border-bottom: none;
   &:before {
@@ -533,7 +537,7 @@ input[type=submit] {
     background: url('../images/ico-tel.svg') 0 0 no-repeat;
     background-size: 14px 14px;
     left: 0;
-    top: 6px;
+    top: 2px;
   }
 }
 
@@ -619,7 +623,6 @@ h2{
   ul {
     margin: 0;
     padding: 0;
-
     li {
       list-style: none;
       position: relative;
@@ -627,29 +630,10 @@ h2{
   }
 
   ol {
-    counter-reset: my-awesome-counter;
-    list-style: none;
-    padding-left: 65px;
-    margin: 35px 0 0 0;
-
-    &.horizontal {
-      display: flex;
-
-      li {
-        padding-right: 130px;
-        font-size: 18px;
-        line-height: 26px;
-      }
-    }
-
-    .more_w {
-      margin-top: 15px;
-    }
+    padding-left: 35px;
   }
 
   ol li {
-    margin: 0 0 44px 0;
-    counter-increment: my-awesome-counter;
     position: relative;
     font-size: 16px;
     line-height: 27px;
@@ -657,26 +641,8 @@ h2{
     b, strong {
       font-weight: normal;
       font-family: $rubik-medium;
-      font-size: 18px;
+      font-size: inherit;
     }
-  }
-
-  ol li::before {
-    content: counter(my-awesome-counter);
-    color: #0049DA;
-    font-size: 24px;
-    font-family: $rubik-light;
-    position: absolute;
-    --size: 50px;
-    left: calc(-1 * var(--size) - 20px);
-    line-height: var(--size);
-    width: var(--size);
-    height: var(--size);
-    top: calc(-1 * var(--size) + 36px);
-
-    border-radius: 50%;
-    text-align: center;
-    border: 1px solid #0049DA;
   }
 }
 
@@ -712,12 +678,11 @@ h2{
 
 .content {
   h1 {
-    font-family: $rubik-medium;
-    font-size: 45px;
-    line-height: 54px;
     font-weight: normal;
+    font-family: $rubik-bold;
+    font-size: 55px;
+    line-height: 54px;
     margin-top: 0;
-    padding: 0 40px;
   }
 }
 
@@ -791,13 +756,130 @@ span.wpcf7-not-valid-tip {
 
 .wrapper{
   position: relative;
-  z-index: 1;
+  z-index: 6;
 }
+.grad-curved{
+  width: 100%;
+  overflow: hidden;
+  height: 224px;
+  img{
+    max-width: 100%;
+  }
+}
+
+.contact-block{
+ .line{
+   flex-direction: row;
+   margin-top: 43px;
+   font-size: 15px;
+   margin-bottom: 35px;
+   flex-wrap: nowrap;
+   .ico-tel{
+     font-size: 15px;
+     font-weight: bold;
+     margin: 0 0 0 7%;
+     a{
+       text-decoration: none;
+       border-bottom: none;
+       color: #231f20;
+       font-weight: bold;
+       font-size: 15px;
+     }
+     &:before{
+       top: 4px;
+     }
+   }
+   .ico-mail{
+     margin-left: 5%;
+     position: relative;
+     padding-left: 27px;
+     a{
+       text-decoration: none;
+       border-bottom: none;
+       font-weight: bold;
+       color: #231f20;
+     }
+     &:before{
+       @extend .pseudo;
+       background: url('../images/ico-mail.svg') 0 0 no-repeat;
+       background-size: contain;
+       width: 17px;
+       height: 13px;
+       position: absolute;
+       left: 0;
+       top: 5px;
+     }
+   }
+   .ico-map{
+     position: relative;
+     padding-left: 25px;
+     &:before{
+       @extend .pseudo;
+       background: url('../images/ico-map.svg') 0 0 no-repeat;
+       background-size: contain;
+       width: 11px;
+       height: 17px;
+       position: absolute;
+       left: 0;
+       top: 2px;
+     }
+   }
+ }
+}
+
+
 @import "_scss/_button.scss";
 @import "_scss/_form.scss";
 @import "_scss/_support.scss";
 @import "_scss/_header.scss";
 @import "_scss/_homepage.scss";
 @import "_scss/_uniqpage.scss";
+@import "_scss/_blog.scss";
 @import "_scss/_footer.scss";
+
+.pages-page_steps{
+  padding-top: 0;
+}
+body.page-template .home-page_bot__contact-block {
+  margin-top: 60px;
+}
+
+body.home .grad-curved{
+  display: none;
+}
+.oval{
+  display: none;
+}
+
+.inner-page-service .pages-page_steps,
+.page-inner-2 .servicepage2-oval + .pages-page_steps
+{
+  padding-top: 0;
+}
+
+.service-vars{
+  margin-bottom: -150px;
+}
+
+.page-template-category-2{
+  .content{
+    position: relative;
+    z-index: 3;
+  }
+  .pages-page_steps{
+    margin-top: -130px;
+  }
+}
+
+.post-template-cases{
+  .grad-curved{
+    margin-bottom: -60px;
+  }
+}
+
+
+
+@import "_scss/_media_1024.scss";
+@import "_scss/_media_1280.scss";
+@import "_scss/_media_1440.scss";
 

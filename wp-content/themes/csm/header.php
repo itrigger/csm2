@@ -3,7 +3,6 @@
 <html class="no-js" <?php language_attributes(); ?>>
 
 <head>
-
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,17 +12,12 @@
 
   <?php wp_head(); ?>
 
-
   <link rel="stylesheet" href="/wp-content/themes/csm/assets/css/owl.carousel.min.css">
   <link rel="stylesheet" href="/wp-content/themes/csm/assets/css/owl.theme.default.min.css">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" href="/wp-content/themes/csm/assets/css/animate.css">
   <link rel="stylesheet" href="/wp-content/themes/csm/assets/css/main.css">
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
-
 </head>
 
 
@@ -46,18 +40,19 @@ wp_body_open();
         </div>
         <div class="site-header_menu">
           <ul class="ul_menu">
-            <li class="ul_menu_item ul_menu_item-acive"><a href="/grajdanstvo">Гражданство РФ</a></li>
-            <li class="ul_menu_item"><a href="/rvp">РВП</a></li>
-            <li class="ul_menu_item"><a href="/vnj">ВНЖ</a></li>
-            <li class="ul_menu_item"><a href="/blog">Блог</a></li>
+            <li class="ul_menu_item m_grad"><a href="/grajdanstvo">Гражданство РФ</a></li>
+            <li class="ul_menu_item m_rvp"><a href="/rvp">РВП</a></li>
+            <li class="ul_menu_item m_vnj"><a href="/vnj">ВНЖ</a></li>
+            <li class="ul_menu_item m_blog"><a href="/blog">Блог</a></li>
+            <li class="ul_menu_item m_contacts"><a href="/contacts">Контакты</a></li>
           </ul>
         </div>
         <div class="pull-right btn-group">
-          <ul class="social-links" style="display: none;">
+          <ul class="social-links" >
             <li><a href="https://api.whatsapp.com/send?phone=79257753467" target="_blank" class="ico-wh"></a></li>
-            <li><a href="viber://chat?number=79257753467" target="_blank" class="ico-vb"></a></li>
+            <li><a href="viber://chat?number=+79257753467" target="_blank" class="ico-vb"></a></li>
           </ul>
-          <a href="tel:88007589889" class="ico-tel top-tel">8 800 758 98 89</a>
+          <a href="tel:89257753467" class="ico-tel top-tel">8&nbsp;925&nbsp;775&nbsp;34&nbsp;67</a>
           <a data-fancybox data-src="#callmeback" href="javascript:;" class="btn btn-alpha">Заказать звонок</a>
         </div>
       </div>

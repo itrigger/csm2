@@ -14,12 +14,20 @@
     flex-direction: row-reverse;
   }
 
+.blocks > div a{
+  display: block;
+  color: inherit;
+  border: none;
+  padding: 35px;
+  height: 100%;
+}
+
 .flex4{
   justify-content: center;
   &>div{
     width: 23%;
     border: 2px solid #b0daf5;
-    padding: 35px;
+
     margin: 0 1%;
     border-radius: 12px;
   }
@@ -29,7 +37,6 @@
   &>div{
     width: 25%;
     border: 2px solid #b0daf5;
-    padding: 35px;
     margin: 0 2%;
     border-radius: 12px;
   }
@@ -76,5 +83,81 @@
   }
   &+header{
     margin-top: 25px;
+  }
+}
+
+.yellow_hint{
+  display: inline-block;
+  font-size: 9px;
+  font-weight: bold;
+  background: #fcd772;
+  padding: 6px 18px 5px;
+  border-radius: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.pagenavi_w{
+  background: #fff;
+  border: 2px solid #b0daf5;
+  border-radius: 10px;
+  text-align: center;
+  display: block;
+  padding: 25px 0 35px;
+  .heading{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.wp-pagenavi{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .pages{
+    display: none;
+  }
+  .page{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #eff8fd;
+    padding: 10px;
+    min-width: 42px;
+    display: inline-block;
+    margin: 0 4px;
+    color: $blue;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .current{
+   border: 2px solid #16a2e5;
+    border-radius: 50%;
+    background: #fff;
+    padding: 10px;
+    min-width: 42px;
+    display: inline-block;
+    margin: 0 5px;
+    color: $blue;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .nextpostslink{
+    background: url('../images/pagenavi.svg') 0 0 no-repeat;
+    width: 25px;
+    height: 18px;
+    font-size: 0;
+    display: inline-block;
+    border-bottom: none;
+    margin-left: 5px;
+  }
+  .previouspostslink{
+    background: url('../images/pagenavi.svg') 0 0 no-repeat;
+    width: 25px;
+    height: 18px;
+    font-size: 0;
+    display: inline-block;
+    border-bottom: none;
+    margin-right: 5px;
+    transform: rotate(180deg);
   }
 }

@@ -13,4 +13,4 @@ jQuery(window).scroll(function(){
     scroll = jQuery(window).scrollTop();
   if (scroll >= 10) sticky.addClass('-top');
   else sticky.removeClass('-top');
-})
+});

@@ -1,0 +1,160 @@
+@media (min-width: 1280px) and (max-width: 1350px){
+  .site-header_menu{
+    margin-left: 30px;
+  }
+  .ul_menu_item{
+    margin-right: 35px;
+  }
+}
+/*media 1280-1439+++++*/
+@media (min-width: 1280px) and (max-width: 1439px){
+  .logo a{
+    background-size: cover;
+    width: 121px;
+    height: 37px;
+  }
+  .site-header_menu{
+    margin-left: 30px;
+  }
+  .in{
+    padding: 0 30px;
+  }
+  .consul-block{
+    width: 387px;
+  }
+  .consul-block__head{
+    padding: 24px 20px 20px 210px;
+  }
+  .consul-block__head .consul-block__name{
+    font-size: 21px;
+  }
+  .consul-block__head .consul-block__desc{
+    margin-top: 4px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .chessmate img{
+    max-width: 90%;
+  }
+  .color-bg header{
+    font-size: 50px;
+  }
+  .color-bg .desc{
+    font-size: 18px;
+  }
+  .color-bg .inner{
+    padding: 130px 57px 0;
+  }
+  .customPreviousBtn{
+    left: 20px;
+  }
+  .customNextBtn{
+    right: 20px;
+  }
+  .homepage-slider .color-bg img{
+    right: 60px;
+  }
+  .hb-pink, .hb-darkblue, .hb-blue{
+    height: 473px;
+  }
+  .homepage-slider .color-bg img{
+    max-width: 450px;
+  }
+  .counts .number{
+    font-size: 120px;
+    margin-bottom: -100px;
+  }
+  .counts .desc{
+    top: 0;
+  }
+  .counts .count_2 .desc{
+    top: -26px;
+  }
+  .sotrud_triple_block{
+    width: 30%;
+    padding-bottom: 20px;
+  }
+  .sotrud_triple .pic img{
+    width: 85%;
+  }
+  .sotrud_triple_block .head{
+    font-size: 22px;
+    padding: 0 20px;
+    margin-top: 0;
+  }
+  .sotrud_triple_block .desc{
+    font-size: 15px;
+    padding: 0 20px;
+  }
+  .steps .step{
+    width: 25%;
+  }
+  .megaoval{
+    width: 1220px;
+    margin: 0 auto;
+  }
+  .consul_form{
+    width: 780px;
+    padding: 45px 35px 40px;
+  }
+  .consul_form .head{
+    font-size: 24px;
+  }
+  .consul_form_bottom{
+    width: 780px;
+  }
+  .home-page_bot__contact-block .consul-block__head{
+    padding: 80px 0 10px 290px;
+  }
+  .home-page_bot__contact-block .consul-block__head:before{
+    height: 250px;
+  }
+  #site-footer .foot_contact .ico-mail{
+    margin-left: 10%;
+  }
+  .blocks .img{
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .flex4 > div{
+    a{
+      padding: 25px;
+    }
+
+  }
+  .flex3 > div{
+    a{
+      padding: 25px;
+    }
+
+  }
+
+  .blocks .head{
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+  .blocks .desc{
+    font-size: 15px;
+  }
+  .service-page_howto h3{
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .service-page_howto .right{
+    padding-right: 20px;
+  }
+  .ra_item{
+    width: 387px;
+  }
+  .color-bg.hb-inner header{
+    font-size: 47px;
+    line-height: 56px;
+  }
+  .blocks-simple .bb{
+    flex-basis: 272px;
+  }
+}
+/*media 1280-1439-----*/
